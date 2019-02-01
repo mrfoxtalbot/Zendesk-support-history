@@ -1,0 +1,106 @@
+tr.status-Closed.type-Zendesk_History td a,
+tr.status-Closed.type-Zendesk_History td span,
+tr.status-Solved.type-Zendesk_History td a,
+tr.status-Solved.type-Zendesk_History td span {
+    opacity: 0.6;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+tr.status-Pending.type-Zendesk_History .subject a::before,
+tr.status-New.type-Zendesk_History .subject a::before,
+tr.status-Open.type-Zendesk_History .subject a::before,
+tr.status-Hold.type-Zendesk_History .subject a::before {
+    font-weight: bold;
+}
+
+tr.status-Solved.type-Zendesk_History .subject a::before {
+    content:"SOLVED: ";
+}
+
+tr.status-Closed.type-Zendesk_History .subject a::before {
+    content:"CLOSED: ";
+}
+
+tr.status-Pending.type-Zendesk_History .subject a::before {
+    content:"PENDING: ";
+}
+
+tr.status-New.type-Zendesk_History .subject a::before {
+    content:"NEW: ";
+}
+
+tr.status-Open.type-Zendesk_History .subject a::before {
+    content:"OPEN: ";
+}
+
+tr.status-Hold.type-Zendesk_History .subject a::before {
+    content:"HOLD: ";
+}
+
+tr.type-Zendesk_History.status-Solved td,
+tr.type-Zendesk_History.status-Open td,
+tr.type-Zendesk_History.status-Pending td,
+tr.type-Zendesk_History.status-Closed td,
+tr.type-Zendesk_History.status-New td,
+tr.type-Zendesk_History.status-Hold td{
+    background: transparent;
+    color: #5F8300;
+}
+
+tr.type-Zendesk_History.status-Solved td a,
+tr.type-Zendesk_History.status-Open td a,
+tr.type-Zendesk_History.status-Pending td a,
+tr.type-Zendesk_History.status-Closed td a,
+tr.type-Zendesk_History.status-New td a,
+tr.type-Zendesk_History.status-Hold td a {
+    color: #5F8300;
+}
+
+tr.type-Zendesk_History.status-Solved td.subject::before,
+tr.type-Zendesk_History.status-Open td.subject::before,
+tr.type-Zendesk_History.status-Pending td.subject::before,
+tr.type-Zendesk_History.status-Closed td.subject::before,
+tr.type-Zendesk_History.status-New td.subject::before,
+tr.type-Zendesk_History.status-Hold td.subject::before{
+    content:"";
+    display: block;
+    background-color: transparent !important;
+    background-image: url('http://www.amrutsoftware.com/wp-content/uploads/2017/09/zendesk_support_icon.png') !important;
+    background-size: 23px 23px;
+    background-position: -3px -3px;
+    width: 20px;
+    height: 20px;
+}
+
+tr.type-Happychat td,
+tr.type-Happychat td a {
+    color: #14ACDD;
+    background: transparent;
+}
+
+tr.type-Happychat td.subject::before {
+    content:"";
+    display: block;
+    background-color: transparent !important;
+    background-image: url('https://hud.happychat.io/assets/favicon.ico') !important;
+    background-size: 16px 16px;
+    width: 16px;
+    height: 16px;
+}
+
+tr.type-Community_Forums_History td,
+tr.type-Community_Forums_History td a {
+    color: #444;
+    background: transparent;
+}
+
+tr.type-Community_Forums_History td.subject::before {
+    content:"";
+    display: block;
+    background-color: transparent !important;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Wordpress-Logo.svg/2000px-Wordpress-Logo.svg.png') !important;
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+}
